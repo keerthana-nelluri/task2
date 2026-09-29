@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Registration</title>
+</head>
+<body>
+
+<div id="form"></div>
+
+<script type="module">
+import "https://cdn.jsdelivr.net/gh/keshavsoft/json-to-tag@main/docs/dist/v4/min.js";
+
+const spec = {
+  tagName: "form",
+  children: [
+    { tagName: "h2", textContent: "Student Registration Form" },
+    { tagName: "input", attributes: { type: "text", name: "name", placeholder: "Student Name" } },
+    { tagName: "input", attributes: { type: "tel", name: "mobile", placeholder: "Mobile Number" } },
+    { tagName: "button", textContent: "Register", attributes: { type: "submit" } }
+  ]
+};
+
+const form = window.ks.jsonToTag.buildSpecElement(spec);
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  console.log("Student Name:", form.elements.name.value);
+  console.log("Mobile Number:", form.elements.mobile.value);
+});
+
+document.getElementById("form").append(form);
+</script>
+
+</body>
+</html>
