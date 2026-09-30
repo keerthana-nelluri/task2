@@ -1,0 +1,26 @@
+Student Registration Form - Task Description
+
+Task:
+Create a Student Registration Form using HTML, Bootstrap, and json-to-tag.
+
+Requirements:
+1. Student Name input field
+2. Mobile Number input field
+3. Register button
+
+Implementation:
+- Created the form using a JSON specification.
+- Used json-to-tag CDN to convert the JSON specification into HTML elements.
+- Used Bootstrap 5.3.3 for responsive layout and styling.
+- Used Bootstrap Icons for the form icons.
+- Added custom CSS for the gradient background, card, input fields, and register button.
+- Added form submission handling using JavaScript.
+- Used preventDefault() to prevent the page from refreshing when the form is submitted.
+- Displayed the entered Student Name and Mobile Number in the browser console.
+
+Purpose of json-to-tag:
+json-to-tag is used to generate HTML elements from a JSON specification instead of writing the HTML elements directly.
+
+Files:
+- index.html - Student Registration Form
+- task.txt - Task description and implementation details
